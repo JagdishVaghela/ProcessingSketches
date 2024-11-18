@@ -14,6 +14,11 @@ void setup()
   SoundFile sound = new SoundFile(this, "val_home.mp3");
   sound.play();
 
+  //// Link to the computer's mic
+  //AudioIn sound;
+  //sound = new AudioIn(this, 0);
+  //sound.start();
+
   // Tell the Fast Fourier Transformer to process the song file.
   fft = new FFT(this, NUM_BANDS);
   fft.input(sound);
